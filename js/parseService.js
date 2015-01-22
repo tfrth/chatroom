@@ -12,7 +12,7 @@ this.getData = function() {
     method: 'GET',
     url: 'https://api.parse.com/1/classes/chat?order=-createdAt'
   });
-}
+};
 
   //On the line below create the postData method. This method will add data to the parse backend.
   //The url for the request needs to be 'https://api.parse.com/1/classes/chat'
@@ -22,11 +22,11 @@ this.getData = function() {
   
 this.postData = function(message) {
   return $http({
-    method: 'POST', 
+    method: 'POST',
     url: 'https://api.parse.com/1/classes/chat',
-    data: message
+    data: message        //need to send parse some data 
   });
-}
+};
 
 
 });
